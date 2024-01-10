@@ -17,3 +17,8 @@ https://github.com/LeoFu9487/push_swap
 pdf in this repository
 
 https://github.com/mcombeau/push_swap
+
+### A. Yigit Ogun
+https://medium.com/@ayogun/push-swap-c1f5d2d41e97
+
+https://github.com/ayogun/push_swap?tab=readme-ov-file
