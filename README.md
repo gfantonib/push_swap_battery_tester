@@ -4,7 +4,6 @@ shuf -r -i 0-1 -n 100 | tr '\n' ' '
 ```
 ## References
 ### Jamie Dawson
-
 https://github.com/JamieDawson/push_swap_final
 
 ### Leo Fu
