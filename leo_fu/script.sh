@@ -23,7 +23,7 @@ echo $time
 time=$(echo $time | cut -b 3,4,5,6,7)
 
 # Make score
-score=$(echo "1/$time+1/$moves" | bc -l)
+score=$(echo "1/$time*1/$moves" | bc -l)
 echo $score
 
 # Clean files
