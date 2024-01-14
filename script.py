@@ -12,22 +12,22 @@ command_1 = ["git", "clone", repository, repository_name,]
 command_2 = ["make", "-C", repository_name]
 print(command_1, command_2)
 subprocess.run(command_1)
-subprocess.run(command_2)
+subprocess.run(command_2, stdout=subprocess.PIPE)
 
 # execute 10 times
 time_total = 0
 moves_total = 0
 iteration = 0
+
 while (iteration < 10):
-	# Random number generator
+	# random number generator
 	randomlist = []
 	for i in range(0, 1000):
 		randomlist.append(i)
 	random.shuffle(randomlist)
 	numbers = ' '.join(map(str, randomlist))
 
-	# Get the exec time of ./push_swap
-	# command = {f"./{repository_name}/{executable_name} {numbers}"} 
+	# get the exec time of ./push_swap
 	command_1 = [f"./{repository_name}/{executable_name} {numbers}"]
 	time_start = time.time()
 	moves_and_time = subprocess.run(command_1, shell=True, check=True, stdout=subprocess.PIPE, text=True)
@@ -51,5 +51,5 @@ subprocess.run(command_1)
 
 # print moves and time
 print(50 * "-")
-print(f"Moves mean: {moves_total / iteration} | Moves total {moves_total}")
-print(f"Time mean: {time_total / iteration} | time total {time_total}")
+print(f"Moves mean: {moves_total / iteration} | Moves total: {moves_total}")
+print(f"Time mean: {time_total / iteration} | Time total: {time_total}")
