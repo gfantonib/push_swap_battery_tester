@@ -22,10 +22,10 @@ def pick_inputs():
 
 # git clone mia rep and make executable
 def clone_and_make(repositorys, repository_name, rep_iteration):
-	print(repository_name[rep_iteration].upper())
+	print(f"\n\n{repository_name[rep_iteration].upper()}")
 	command_1 = ["git", "clone", repositorys[rep_iteration], repository_name[rep_iteration]]
 	command_2 = ["make", "-C", repository_name[rep_iteration]]
-	print(command_1, command_2)
+	# print(command_1, command_2)
 	subprocess.run(command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	subprocess.run(command_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
@@ -45,7 +45,7 @@ def exec_push_swap(repository_name, executable_name, numbers, rep_iteration, ite
 	output = subprocess.run(command_1, shell=True, check=True, stdout=subprocess.PIPE, text=True)
 	time_end = time.time()
 	time_elapsed = time_end - time_start
-	print(f"({iteration})\n   Time: {time_elapsed:.4f}s")
+	# print(f"({iteration})\n   Time: {time_elapsed:.4f}s")
 	return (output, time_elapsed)
 
 # format moves

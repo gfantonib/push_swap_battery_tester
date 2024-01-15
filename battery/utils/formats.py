@@ -3,7 +3,7 @@ import random
 # input
 def pick_inputs():
 	print("Put the repositorys links that you want inside the competition with only one space between them.\n\
-	If you want to run only one repository, that is fine to.")
+If you want to run only one repository, that is fine to.")
 	input_1 = input()
 	print("Now you need to name each one of those repositories, respectively.")
 	input_2 = input()
@@ -12,11 +12,12 @@ def pick_inputs():
 	if (len(repository_name) != len(repositorys)):
 		print("The number of repositorys needs to be the same as the number of names!")
 		exit()
-	print("Choose the amount of numbers that goes as parameters of your ./push_swap")
+	print("\nChoose how many times the program runs for each set of numbers.")
 	input_3 = input()
-	number_of_numbers = int(input_3)
+	iter_max = int(input_3)
+	number_of_numbers = [3, 5, 100, 500]
 	executable_name = "push_swap"
-	return (repositorys, repository_name, number_of_numbers, executable_name)
+	return (repositorys, repository_name, number_of_numbers, executable_name, iter_max)
 
 # random number generator
 def random_generator(number_of_numbers):
@@ -32,7 +33,7 @@ def format_moves (output):
 	moves = output.stdout
 	moves = moves.replace('\n', ' ')
 	moves = len(moves.split())
-	print(f"   Moves: {moves}")
+	# print(f"   Moves: {moves}")
 	return (moves)
 
 # print moves and time
