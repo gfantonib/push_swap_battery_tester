@@ -1,7 +1,7 @@
 # push_swap_battery_test
 
 <div align="center">
-  <img src="https://tenor.com/pt-BR/view/surfs-up-gif-23662948.gif" alt="Animated GIF">
+  <img src="https://imgur.com/Fez4xCD.gif" alt="Animated GIF">
 </div>
 
 ## This tester orchestrates a competition among selected push_swap repositories.
