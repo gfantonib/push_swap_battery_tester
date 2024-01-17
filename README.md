@@ -1,26 +1,25 @@
-### Random generator
+# push_swap_battery_test
+
+![Animated GIF](https://media1.tenor.com/m/fSf2R4cpx1cAAAAd/surfs-up.gif)
+
+## This tester orchestrates a competition among selected push_swap repositories. For each push_swap repository, it calculates the execution time and the number of movements.
 ```sh
-shuf -r -i 0-1 -n 100 | tr '\n' ' '
+git clone https://github.com/gfantonib/push_swap_battery_tester.git
+cd push_swap_battery_tester
+cd battery
+python3 main.py
 ```
-### Time and Moves
-```sh
-time ./push_swap $(<random_1) && ./push_swap $(<random_1) | wc -l
-```
-### Redirect time and ./push_swap output to file
-(time ./push_swap $(<random_1)) > output.txt 2>&1
+### To set up the race, follow these examples:
 
-### 
-(time ./push_swap $(<random_1)) > output.txt 2>&1 && grep user output.txt > output_2.txt && awk '{print $3}' output_2.txt
+### Specify the repositories you want in the race with only one space between them:
+**https://github.com/mcombeau/push_swap.git https://github.com/LeoFu9487/push_swap.git https://github.com/ayogun/push_swap.git**
 
-## References
-### Jamie Dawson
-https://github.com/JamieDawson/push_swap_final
+### 2. Assign a name to each repository respectively:
+**mia_combeau leo_fu yigit_ogun**
 
-### Leo Fu
-https://github.com/LeoFu9487/push_swap
+### 3. Determine the sets, i.e., the number of elements you want the program to execute. Each set will be filled with random numbers:
+**3 5 100 500**
 
-### Mia Combeau
-https://github.com/mcombeau/push_swap
+### 4. Specify how many times the program runs for each set of numbers. This indicates how many times ./push_swap {...} is going to be executed for each set. The average time and movements will be calculated:
+**10**
 
-### A. Yigit Ogun
-https://github.com/ayogun/push_swap?tab=readme-ov-file

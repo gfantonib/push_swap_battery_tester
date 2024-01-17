@@ -1,6 +1,0 @@
-https://github.com/mcombeau/push_swap.git 
-https://github.com/LeoFu9487/push_swap.git
-https://github.com/Edu2metros/push_swap.git
-https://github.com/ayogun/push_swap.git
-
-https://github.com/mcombeau/push_swap.git https://github.com/LeoFu9487/push_swap.git https://github.com/beatrizdile/42sp-push_swap.git
