@@ -1,8 +1,9 @@
 # push_swap_battery_test
 
-![Alt Text](https://media1.tenor.com/m/fSf2R4cpx1cAAAAd/surfs-up.gif)
+![Alt Text](https://imgur.com/Fez4xCD.gif)
 
-## This tester orchestrates a competition among selected push_swap repositories. For each push_swap repository, it calculates the execution time and the number of movements.
+## This tester orchestrates a competition among selected push_swap repositories.
+### For each push_swap repository, it calculates the execution time and the number of movements.
 ```sh
 git clone https://github.com/gfantonib/push_swap_battery_tester.git
 cd push_swap_battery_tester
