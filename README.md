@@ -1,7 +1,7 @@
 # push_swap_battery_test
 
 <div align="center">
-  <img src="https://imgur.com/Fez4xCD.gif" alt="Animated GIF">
+  <img src="https://media0.giphy.com/media/xTgeJ2osZDHtVjtGXC/giphy.gif?cid=ecf05e47qsgycy8ndsysxie9wyszu4w47tzajx34iie59qac&ep=v1_gifs_search&rid=giphy.gif&ct=g.gif" alt="Animated GIF">
 </div>
 
 ## This tester orchestrates a competition among selected push_swap repositories.
