@@ -6,13 +6,14 @@
 
 ## This tester orchestrates a competition among selected push_swap repositories.
 ### For each push_swap repository, it calculates the execution time and the number of movements.
+### All you need is a repository with a Makefile that compiles a *push_swap* executable.
 ```sh
 git clone https://github.com/gfantonib/push_swap_battery_tester.git
 cd push_swap_battery_tester
 cd battery
 python3 main.py
 ```
-### To set up the race, follow these examples:
+### To set up the race (battery), follow these examples:
 
 1. Specify the repositories you want in the race with only one space between them:\
 **https://github.com/mcombeau/push_swap.git https://github.com/LeoFu9487/push_swap.git https://github.com/ayogun/push_swap.git**
@@ -27,4 +28,6 @@ python3 main.py
 This indicates how many times ./push_swap {...} is going to be executed for each set.\
 The average time and movements will be calculated:\
 **10**
+
+### If you want to use the ecxacly the same inputs and compare the results between the chosen repositories, use the battery_2.
 
