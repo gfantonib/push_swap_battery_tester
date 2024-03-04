@@ -6,7 +6,7 @@
 
 ## This tester orchestrates a competition among selected push_swap repositories.
 ### For each push_swap repository, it calculates the execution time and the number of movements.
-### All you need is a repository with a Makefile that compiles a *push_swap* executable.
+### All you need is a repository with a Makefile that compiles a **push_swap** executable.
 ```sh
 git clone https://github.com/gfantonib/push_swap_battery_tester.git
 cd push_swap_battery_tester
@@ -29,5 +29,5 @@ This indicates how many times ./push_swap {...} is going to be executed for each
 The average time and movements will be calculated:\
 **10**
 
-### If you want to use the ecxacly the same inputs and compare the results between the chosen repositories, use the battery_2.
+*If you want to use the ecxacly the same inputs and compare the results between the chosen repositories, use the battery_2.*
 
