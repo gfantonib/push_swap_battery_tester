@@ -6,7 +6,7 @@
 
 ## This tester orchestrates a competition among selected push_swap repositories.
 ### For each push_swap repository, it calculates the execution time and the number of movements.
-### All you need is a repository with a Makefile that compiles a **push_swap** executable.
+### All you need is a repository with a Makefile that compiles a *push_swap* executable.
 ```sh
 git clone https://github.com/gfantonib/push_swap_battery_tester.git
 cd push_swap_battery_tester
